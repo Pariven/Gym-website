@@ -5,21 +5,26 @@ interface HeroCarouselProps {
   children: React.ReactNode;
 }
 
+// Alternative: Try with explicit paths for GitHub Pages
 const gymImages = [
-  `${import.meta.env.BASE_URL}lovable-uploads/ce5fa0b1-764f-41e1-84ce-e059d27b6474.png`,
-  `${import.meta.env.BASE_URL}lovable-uploads/7f20fc60-6164-46b3-988b-760062e08450.png`, 
-  `${import.meta.env.BASE_URL}lovable-uploads/c22fc461-4f9b-4946-b724-32cef946440c.png`,
-  `${import.meta.env.BASE_URL}lovable-uploads/cd75f160-e926-4611-8521-afc74f0b7282.png`,
-  `${import.meta.env.BASE_URL}lovable-uploads/9f4fe133-81e8-4933-88e1-6c69a1b3e446.png`,
-  `${import.meta.env.BASE_URL}lovable-uploads/75180df3-66d0-4fe2-9705-b6c71871eff9.png`,
-  `${import.meta.env.BASE_URL}lovable-uploads/93261451-d2f3-47ee-a859-c718089a927f.png`,
-  `${import.meta.env.BASE_URL}lovable-uploads/1300ed23-9df9-4fb5-9fac-c12fd9d42ecd.png`
+  "/Gym-website/lovable-uploads/ce5fa0b1-764f-41e1-84ce-e059d27b6474.png",
+  "/Gym-website/lovable-uploads/7f20fc60-6164-46b3-988b-760062e08450.png", 
+  "/Gym-website/lovable-uploads/c22fc461-4f9b-4946-b724-32cef946440c.png",
+  "/Gym-website/lovable-uploads/cd75f160-e926-4611-8521-afc74f0b7282.png",
+  "/Gym-website/lovable-uploads/9f4fe133-81e8-4933-88e1-6c69a1b3e446.png",
+  "/Gym-website/lovable-uploads/75180df3-66d0-4fe2-9705-b6c71871eff9.png",
+  "/Gym-website/lovable-uploads/93261451-d2f3-47ee-a859-c718089a927f.png",
+  "/Gym-website/lovable-uploads/1300ed23-9df9-4fb5-9fac-c12fd9d42ecd.png"
 ];
 
 export function HeroCarousel({ children }: HeroCarouselProps) {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
+    // Debug: Log the image URLs
+    console.log('Base URL:', import.meta.env.BASE_URL);
+    console.log('Image URLs:', gymImages);
+    
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % gymImages.length);
     }, 5000); // Change slide every 5 seconds
@@ -50,8 +55,13 @@ export function HeroCarousel({ children }: HeroCarouselProps) {
               index === currentSlide ? "opacity-100" : "opacity-0"
             }`}
             style={{ backgroundImage: `url(${image})` }}
+            onError={(e) => {
+              console.error(`Failed to load image: ${image}`);
+            }}
           />
         ))}
+        {/* Fallback background if no images load */}
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-black to-gray-800" />
       </div>
       
       {/* Dark Overlay */}
