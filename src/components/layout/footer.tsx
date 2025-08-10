@@ -9,7 +9,7 @@ export function Footer() {
           {/* Brand */}
           <div>
             <h3 className="text-2xl font-oswald font-bold text-neon-blue mb-4">
-              FITMAX GYM
+              GYM PARADISE
             </h3>
             <p className="text-muted-foreground mb-6">
               Transform your body, transform your life. Join the ultimate fitness experience.
@@ -70,7 +70,7 @@ export function Footer() {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail size={16} className="text-neon-blue" />
-                <span className="text-muted-foreground">info@fitmax.com</span>
+                <span className="text-muted-foreground">info@gymparadise.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin size={16} className="text-neon-blue" />
@@ -102,7 +102,7 @@ export function Footer() {
 
         {/* Copyright */}
         <div className="border-t border-secondary mt-8 pt-8 text-center text-muted-foreground">
-          <p>&copy; 2024 FitMax Gym. All rights reserved.</p>
+          <p>&copy; 2024 Gym Paradise. All rights reserved.</p>
         </div>
       </div>
     </footer>

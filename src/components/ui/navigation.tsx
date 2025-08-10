@@ -34,13 +34,13 @@ export function Navigation() {
         : "bg-black/40 backdrop-blur-sm border border-white/10"
     )}>
       <div className="container-custom">
-        <div className="flex items-center justify-between h-16 px-6">
-          <Link to="/" className="flex items-center space-x-2 group">
-            <div className="p-2 bg-gradient-to-r from-neon-blue to-neon-green rounded-lg group-hover:animate-glow-rotate">
-              <Zap className="h-6 w-6 text-black" />
+        <div className="flex items-center justify-between h-16 px-3 sm:px-6">
+          <Link to="/" className="flex items-center space-x-1 sm:space-x-2 group">
+            <div className="p-1.5 sm:p-2 bg-gradient-to-r from-neon-blue to-neon-green rounded-lg group-hover:animate-glow-rotate">
+              <Zap className="h-5 w-5 sm:h-6 sm:w-6 text-black" />
             </div>
-            <span className="text-2xl font-oswald font-bold text-white group-hover:text-neon-blue transition-colors duration-300">
-              FITMAX
+            <span className="text-base sm:text-lg md:text-2xl font-oswald font-bold text-white group-hover:text-neon-blue transition-colors duration-300">
+              GYM PARADISE
             </span>
           </Link>
           

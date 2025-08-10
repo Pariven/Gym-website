@@ -8,13 +8,13 @@ const About = () => {
       <main className="pt-16">
         <div className="container-custom section-padding">
           <h1 className="text-4xl font-oswald font-bold text-center mb-8">
-            About <span className="text-neon">FitMax Gym</span>
+            About <span className="text-neon">Gym Paradise</span>
           </h1>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-2xl font-oswald font-semibold mb-4">Our Story</h2>
               <p className="text-muted-foreground mb-6">
-                Founded in 2010, FitMax Gym has been transforming lives through fitness. 
+                Founded in 2010, Gym Paradise has been transforming lives through fitness. 
                 We believe that everyone deserves access to world-class training and equipment.
               </p>
               <p className="text-muted-foreground">

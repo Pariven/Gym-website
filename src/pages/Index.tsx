@@ -21,7 +21,7 @@ const Index = () => {
                 POTENTIAL
               </span>
             </h1>
-            <p className="text-xl md:text-3xl mb-10 max-w-3xl mx-auto font-medium text-gray-200 opacity-90">
+            <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-10 max-w-3xl mx-auto font-medium text-gray-200 opacity-90">
               Transform your body, mind, and spirit with cutting-edge equipment, world-class trainers, and an unstoppable community.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
@@ -68,7 +68,7 @@ const Index = () => {
         <div className="container-custom relative z-10">
           <div className="text-center mb-16 scroll-reveal">
             <h2 className="text-5xl md:text-6xl font-shock font-bold mb-6">
-              Why Choose <span className="bg-gradient-to-r from-neon-blue via-neon-green to-neon-pink bg-clip-text text-transparent">FitMax</span>?
+              Why Choose <span className="bg-gradient-to-r from-neon-blue via-neon-green to-neon-pink bg-clip-text text-transparent">Gym Paradise</span>?
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Experience the difference with premium facilities, personalized training, and an unstoppable community.

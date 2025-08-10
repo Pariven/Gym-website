@@ -26,7 +26,7 @@ const Contact = () => {
                   <Mail className="h-6 w-6 text-neon-blue" />
                   <div>
                     <p className="font-semibold">Email</p>
-                    <p className="text-muted-foreground">info@fitmax.com</p>
+                    <p className="text-muted-foreground">info@gymparadise.com</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-4">
