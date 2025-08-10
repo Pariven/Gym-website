@@ -5,17 +5,17 @@ interface HeroCarouselProps {
   children: React.ReactNode;
 }
 
-// Alternative: Try with explicit paths for GitHub Pages
-const gymImages = [
-  "/Gym-website/lovable-uploads/ce5fa0b1-764f-41e1-84ce-e059d27b6474.png",
-  "/Gym-website/lovable-uploads/7f20fc60-6164-46b3-988b-760062e08450.png", 
-  "/Gym-website/lovable-uploads/c22fc461-4f9b-4946-b724-32cef946440c.png",
-  "/Gym-website/lovable-uploads/cd75f160-e926-4611-8521-afc74f0b7282.png",
-  "/Gym-website/lovable-uploads/9f4fe133-81e8-4933-88e1-6c69a1b3e446.png",
-  "/Gym-website/lovable-uploads/75180df3-66d0-4fe2-9705-b6c71871eff9.png",
-  "/Gym-website/lovable-uploads/93261451-d2f3-47ee-a859-c718089a927f.png",
-  "/Gym-website/lovable-uploads/1300ed23-9df9-4fb5-9fac-c12fd9d42ecd.png"
-];
+// Import images directly from src/assets so Vite can process them
+import img1 from "@/assets/images/ce5fa0b1-764f-41e1-84ce-e059d27b6474.png";
+import img2 from "@/assets/images/7f20fc60-6164-46b3-988b-760062e08450.png";
+import img3 from "@/assets/images/c22fc461-4f9b-4946-b724-32cef946440c.png";
+import img4 from "@/assets/images/cd75f160-e926-4611-8521-afc74f0b7282.png";
+import img5 from "@/assets/images/9f4fe133-81e8-4933-88e1-6c69a1b3e446.png";
+import img6 from "@/assets/images/75180df3-66d0-4fe2-9705-b6c71871eff9.png";
+import img7 from "@/assets/images/93261451-d2f3-47ee-a859-c718089a927f.png";
+import img8 from "@/assets/images/1300ed23-9df9-4fb5-9fac-c12fd9d42ecd.png";
+
+const gymImages = [img1, img2, img3, img4, img5, img6, img7, img8];
 
 export function HeroCarousel({ children }: HeroCarouselProps) {
   const [currentSlide, setCurrentSlide] = useState(0);
